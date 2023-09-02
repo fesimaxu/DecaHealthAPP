@@ -11,5 +11,4 @@ export const AppointmentSchema = new Schema({
   dateOfAppointment: { type: String, require: true }
 });
 
-
 export default mongoose.model<IAppointmentModel>('Appointment', AppointmentSchema);

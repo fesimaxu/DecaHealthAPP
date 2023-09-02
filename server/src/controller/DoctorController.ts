@@ -6,7 +6,6 @@ import { Error } from 'mongoose';
 import { hashPassword } from '../utils/services/service';
 import { Status } from '../utils/constants/interface';
 
-
 export const getDoctors = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const allDoctors = await Doctor.find()
