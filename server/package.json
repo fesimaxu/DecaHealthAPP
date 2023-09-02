@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist/app",
-    "dev": "nodemon dist/app",
-    "dev:watch": "tsc -w"
+    "build": "nodemon dist/app",
+    "dev": "tsc -w"
   }, 
   "dependencies": {
     "bcrypt": "^5.1.0",
