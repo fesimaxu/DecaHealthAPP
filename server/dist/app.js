@@ -19,6 +19,7 @@ app.use((0, morgan_1.default)('dev'));
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use(express_1.default.urlencoded({ extended: false }));
+//route
 app.use('/user', UserRouter_1.default);
 app.use('/doctor', DoctorRouter_1.default);
 app.use('/', AppointmentRouter_1.default);
