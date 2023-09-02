@@ -5,12 +5,12 @@ import { useState } from 'react';
  import style from  "../otp/otp.module.css"
  import axios from "../../lib/axios"
  import { useNavigate } from 'react-router-dom';
- import {toast, ToastContainer} from "react-toastify"
+//  import {toast, ToastContainer} from "react-toastify"
  import "react-toastify/ReactToastify.css"
    export default function Otp() {
     const navigate = useNavigate()
     const [user, setUser] = useState({otp : ""});
-    const [verifyOtp, setVeryOtp] = useState<any>('')
+    const [verifyOtp] = useState<any>('')
 
     const handleChange = (event:any) => {
       const name:string = event.target.name;
@@ -60,7 +60,7 @@ import { useState } from 'react';
     </form>
     
         </div>
-        <ToastContainer></ToastContainer>
+        {/* <ToastContainer></ToastContainer> */}
       </section>  
       
     </>  

@@ -4,7 +4,7 @@ import Location from "../../assets/location.svg";
 import Review from "../../assets/review.svg";
 import axios from "../../lib/axios";
 import ShowModal from "../Modal/Modal";
-import {toast, ToastContainer} from "react-toastify"
+import { ToastContainer} from "react-toastify"
 import "react-toastify/ReactToastify.css"
 
 import CardCSS from "../AppointmentCard/AppointmentCard.module.css";
@@ -13,8 +13,7 @@ const Card = () => {
   const [show, setShow] = useState(false);
 
   // const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-//   const [search, setSearch] = useState<any[]>([]);
+
   const [doctors, setDoctors] = useState<any[]>([]);
 
   const searchDoctor = async () => {
@@ -50,7 +49,8 @@ const Card = () => {
   return (
     <article className={CardCSS.wrapper}>
       <div className={CardCSS.row} >
-        {doctors.map((doctor: any, id:number  ) => (
+      
+        {doctors.map((doctor: any ) => (
           <div className={CardCSS.card} key ={doctor.id} >
             <img
          

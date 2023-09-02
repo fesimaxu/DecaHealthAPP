@@ -17,7 +17,7 @@ import "react-toastify/ReactToastify.css"
    export default function Login() {
 
     const navigate = useNavigate()
-    const[error, setError] = useState("")
+    // const[error, setError] = useState("")
     const [user, setUser] = useState({email : "", password: "", otp: ""});
     const handleChange = (event:any) => {
       const name:string = event.target.name;
@@ -64,7 +64,7 @@ import "react-toastify/ReactToastify.css"
        
         <div className={LoginStyle.login}>
         <form className={LoginStyle.form}>
-        <h5 className={LoginStyle.error}>{error}</h5>
+        {/* <h5 className={LoginStyle.error}>{error}</h5> */}
           <div className={LoginStyle.header}> <img src={DecaHealth} alt="" /></div>
       <label className={LoginStyle.label}>Email:</label>
         <input
