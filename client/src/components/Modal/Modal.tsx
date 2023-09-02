@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ModalStyle from "../Modal/Modal.module.css"
 import axios from "../../lib/axios"
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import {toast, ToastContainer} from "react-toastify"
 import "react-toastify/ReactToastify.css"
 
@@ -16,7 +16,7 @@ import "react-toastify/ReactToastify.css"
 
 
 function ShowModal({closeModal}:any) {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
    const [appointment, setAppointment] = useState({
   name: localStorage.getItem("name"),
    hospital:localStorage.getItem("hospital"),
