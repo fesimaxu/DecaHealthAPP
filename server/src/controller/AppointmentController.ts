@@ -3,7 +3,7 @@ import Appointment from "../model/AppointmentModel";
 import { ValidateAppointment } from "../utils/validation";
 import { sendAppointment } from "../utils/services/emailNotification";
 import User from "../model/UserModel";
-import Doctor from "../model/DoctorModel"
+import Doctor from "../model/DoctorModel";
 import { IAppointmentModel, Status } from "../utils/constants/interface";
 
 
