@@ -95,7 +95,7 @@ export const createUser = async (req: Request, res: Response, next: NextFunction
         }
 
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
 
